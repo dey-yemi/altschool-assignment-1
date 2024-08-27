@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Africa Application Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>AltSchool Africa Application Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="table.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="application-form">
+            <h2>Sign Up</h2>
+            <p>Take the next steps to apply at AltSchool Africa</p>
+            <form action="#" method="post">
+
+                <!-- Flex Container for First Name and Last Name -->
+                <div class="form-flex-container">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
+                    </div>
+                </div>
+
+                <!-- Flex Container for Date of Birth and Gender -->
+                <div class="form-flex-container">
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+
+                <!-- Flex Container for Phone Number and Email Address -->
+                <div class="form-flex-container">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+234" required>
+                    </div>
+                </div>
+
+                <!-- Flex Container for State/City of Residence and Country -->
+                <div class="form-flex-container">
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="south-africa">South Africa</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United-kingdom</option>
+                            <option value="qatar">Qatar</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">State/City of Residence</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your state of residence" required>
+                    </div>
+                </div>
+
+                <!-- Separate Field for How did you hear about us? -->
+                <div class="form-group">
+                    <label for="channel">How did you hear about us?</label>
+                    <select id="channel" name="channel" required>
+                        <option value="">Select channel</option>
+                        <option value="social_media">Social Media</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Flex Container for Password and Confirm Password -->
+                <div class="form-flex-container">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter password again"required>
+                    </div>
+                </div>
+
+               <p>By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</p>
+               
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AltSchool Africa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* General styles for the body and main sections */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: rgb(51, 51, 51);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(65, 65, 65);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#application-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+#application-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#application-form p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.5rem;
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    padding: 0.75rem;
+    background: rgb(66, 66, 66);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    background: rgb(48, 47, 47);
+}
+
+/* Flex container styles */
+.form-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.form-flex-container .form-group {
+    flex: 1 1 45%; /* Adjust width of each field */
+    min-width: 200px; /* Ensure responsiveness */
+}
+
+footer {
+    background: rgb(102, 102, 102);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
